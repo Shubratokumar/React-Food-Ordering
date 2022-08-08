@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "type": "Houses",
+        "imgUrl":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "550",
+        "location": "New York,USA",
+        "name": "Palm Harbor"
+    },
+    {
+        "id": "2",
+        "type": "Houses",
+        "imgUrl":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "650",
+        "location": "California,USA",
+        "name": "Palm Harbo"
+    },
+    {
+        "id": "3",
+        "type": "Hotels",
+        "imgUrl":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "750",
+        "location": "New York,USA",
+        "name": "Palm Haror"
+    },
+    {
+        "id": "4",
+        "type": "Hotels",
+        "imgUrl":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "850",
+        "location": "Florida,USA",
+        "name": "Palm Harbor"
+    },
+    {
+        "id": "5",
+        "type": "Houses",
+        "imgUrl":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "950",
+        "location": "New York,USA",
+        "name": "Palm Harbor"
+    }
+]
