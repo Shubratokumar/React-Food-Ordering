@@ -1,0 +1,62 @@
+.footer{
+    padding: 50px 0px;
+    background: #fde4e4;
+}
+.footer_logo img{
+    width: calc(100% - 70%);
+    margin-bottom: 5px;
+}
+.footer_logo h5{
+    font-weight: 600;
+    font-style: 1rem;
+    margin-bottom: 15px;
+}
+.footer_logo p{
+    font-style: 0.9rem;
+    color: #333;
+    line-height: 28px;
+}
+.delivery_time-item {
+    background: transparent !important;
+}
+.delivery_time-item span{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #212245;
+}
+.delivery_time-item p{
+    color: #212245;
+}
+.footer_title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #212245;
+}
+.newsletter{
+    padding: 7px;
+    border: 1px solid #212245;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter input{
+    background: transparent;
+    border: none;
+    outline:none;
+}
+.newsletter input:focus {
+    outline: none;
+}
+.newsletter span{
+    background: #212245;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newsletter span i {
+    color: #fff;
+}
+.newsletter input::placeholder{
+    color: #212245;
+}
