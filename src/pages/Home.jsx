@@ -15,6 +15,7 @@ import products from "../assets/fake-data/products.js";
 import foodCategoryImg01 from "../assets/images/hamburger.png";
 import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
+import ProductCard from './../components/UI/product-card/ProductCard';
 
 const featureData = [
     {
@@ -111,13 +112,20 @@ const Home = () => {
                             <h2>Popular Foods</h2>
                         </Col>
                         <Col lg="12" >
-                            <div className="food_category">
-                                <button className="all_btn">All</button>
-                                <button><img src={foodCategoryImg01} alt="Burger" />Burger</button>
-                                <button><img src={foodCategoryImg02} alt="Pizza" />Pizza</button>
-                                <button><img src={foodCategoryImg03} alt="Bread" />Bread</button>
+                            <div className="food_category d-flex align-items-center justify-content-center gap-4">
+                                <button className="all_btn foodBtnActive">All</button>
+                                <button className="d-flex align-items-center gap-2"><img src={foodCategoryImg01} alt="Burger" />Burger</button>
+                                <button className="d-flex align-items-center gap-2"><img src={foodCategoryImg02} alt="Pizza" />Pizza</button>
+                                <button className="d-flex align-items-center gap-2"><img src={foodCategoryImg03} alt="Bread" />Bread</button>
                             </div>
                         </Col>
+                        {
+                            products.map((item, index) => (
+                                <Col lg="3" md="4" key={index}>
+                                    <ProductCard item={item} />
+                                </Col>
+                            ))
+                        }
                     </Row>
                 </Container>
             </section>

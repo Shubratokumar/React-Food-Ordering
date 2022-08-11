@@ -1,17 +1,17 @@
 import React from 'react';
-import productImg from '../../../assets/images/product_2.1.jpg'
 import { Link } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = ({item}) => {
+    const { id, title, image01, price } = item
     return (
         <div className="product_item">
             <div className="product_img">
-                <img src={productImg} alt="product-img" />
+                <img src={image01} alt="product-img" className='w-100' />
             </div>
             <div className="product_content">
-                <h5><Link>Burger</Link></h5>
+                <h5><Link to={`/foods/${id}`}>{title}</Link></h5>
                 <div>
-                    <span className="product_price">$24.00</span>
+                    <span className="product_price">${price}</span>
                     <button className="addToCard_btn">Add to Cart</button>
                 </div>
             </div>            
