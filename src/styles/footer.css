@@ -1,5 +1,6 @@
 .footer{
-    padding: 50px 0px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     background: #fde4e4;
 }
 .footer_logo img{
@@ -49,7 +50,7 @@
     outline: none;
 }
 .newsletter span{
-    background: #212245;
+    background: #df2020;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -59,4 +60,15 @@
 }
 .newsletter input::placeholder{
     color: #212245;
+}
+
+.social_links span i {
+    padding: 5px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 50%;
+}
+.copyright_text {
+    font-style: 0.8rem;
+    color: #df2020;
 }
