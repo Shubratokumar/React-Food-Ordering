@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Helmet from "./../components/Helmet/Helmet";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import heroImg from "../assets/images/hero.png";
 import "../styles/hero-section.css";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import Category from "./../components/UI/category/Category";
+import ProductCard from "./../components/UI/product-card/ProductCard";
+import products from "../assets/fake-data/products.js";
 
 import featureImg01 from "../assets/images/service-01.png";
 import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
 
-import products from "../assets/fake-data/products.js";
 import foodCategoryImg01 from "../assets/images/hamburger.png";
 import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
-import ProductCard from "./../components/UI/product-card/ProductCard";
+
+import whyImg from "../assets/images/location.png";
 
 const featureData = [
   {
@@ -187,6 +189,35 @@ const Home = () => {
               </Col>
             ))}
           </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+            <Row>
+                <Col lg="6" md="6">
+                    <img src={whyImg} alt="why-tasty-foods" className="w-100"/>
+                </Col>
+                <Col lg="6" md="6">
+                    <div className="why_tasty-foods">
+                        <h2 className="tasty_foods-title mb-4">Why <span>Tasty Foods?</span></h2>
+                        <p className="tasty-tread-decs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur nam aperiam quas eaque atque obcaecati nisi veritatis sapiente. Qui maxime rem autem eveniet enim. Sequi consequatur distinctio eaque itaque.</p>
+                        <ListGroup className="mt-5">
+                            <ListGroupItem className="border-0 ps-0">
+                                <p className="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Fresh and tasty foods</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+                            </ListGroupItem>
+                            <ListGroupItem className="border-0 ps-0">
+                                <p className="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Quality support</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+                            </ListGroupItem>
+                            <ListGroupItem className="border-0 ps-0">
+                                <p className="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Order from anywhere, anytime</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+                            </ListGroupItem>
+                        </ListGroup>
+                    </div>
+                </Col>
+            </Row>
         </Container>
       </section>
     </Helmet>

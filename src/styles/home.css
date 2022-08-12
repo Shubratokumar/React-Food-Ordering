@@ -32,3 +32,10 @@
     border-radius: 5px;
     color: #df2020 !important;
 }
+.tasty_foods-title span{
+    color: #df2020 ;
+}
+.tasty-tread-decs {
+    color: #777;
+    line-height: 28px;
+}
