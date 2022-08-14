@@ -39,3 +39,14 @@
     color: #777;
     line-height: 28px;
 }
+.choose_us-item{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.choose_us-item i {
+    font-weight: 500 !important;
+    color: #df2020;
+}
+.choose_us-desc{
+    color: #777;
+}

@@ -203,16 +203,16 @@ const Home = () => {
                         <p className="tasty-tread-decs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur nam aperiam quas eaque atque obcaecati nisi veritatis sapiente. Qui maxime rem autem eveniet enim. Sequi consequatur distinctio eaque itaque.</p>
                         <ListGroup className="mt-5">
                             <ListGroupItem className="border-0 ps-0">
-                                <p className="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Fresh and tasty foods</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+                                <p className="choose_us-item d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Fresh and tasty foods</p>
+                                <p className='choose_us-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
                             </ListGroupItem>
                             <ListGroupItem className="border-0 ps-0">
-                                <p className="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Quality support</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+                                <p className="choose_us-item d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Quality support</p>
+                                <p className='choose_us-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
                             </ListGroupItem>
                             <ListGroupItem className="border-0 ps-0">
-                                <p className="d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Order from anywhere, anytime</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
+                                <p className="choose_us-item d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Order from anywhere, anytime</p>
+                                <p className='choose_us-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias.</p>
                             </ListGroupItem>
                         </ListGroup>
                     </div>
