@@ -18,6 +18,8 @@ import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
 
 import whyImg from "../assets/images/location.png";
+import networkImg from "../assets/images/network.png";
+import TestimonialSlider from './../components/UI/slider/TestimonialSlider';
 
 const featureData = [
   {
@@ -231,7 +233,7 @@ const Home = () => {
       <section className="pt-0">
         <Container>
           <Row>
-            <Col lg="12" className="text-center">
+            <Col lg="12" className="text-center mb-5">
               <h2>Hot Pizza</h2>
             </Col>
             {
@@ -241,6 +243,25 @@ const Home = () => {
                 </Col>
               ))
             }
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6" md="6">
+              <div className="testimonial ">
+                <h5 className="testimonial_subtitle mb-4">Testimonial</h5>
+                <h2 className="testimonial_title mb-4">What our <span>customers</span> are <br /> saying ?</h2>
+                <p className="testimonial_desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, explicabo corporis cumque, deserunt illum tenetur hic repellendus fugiat alias totam voluptatem laudantium! Dolor quas velit nobis illo vitae nisi beatae. Maxime, eius sunt et iste accusantium similique eum, qui ad voluptate labore blanditiis! Architecto?
+                </p>
+                <TestimonialSlider />
+              </div>
+            </Col>
+            <Col lg="6"  md="6">
+              <img src={networkImg} alt="network-img" className="w-100"/>
+            </Col>
           </Row>
         </Container>
       </section>
