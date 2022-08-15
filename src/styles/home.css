@@ -80,6 +80,27 @@
     .hero_service p{
         font-size: 0.7rem !important;
     }
+    .feature_item h5{
+        font-size: 0.9rem;
+    }
+    .feature_item p{
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+    }
+    .feature_subtitle{
+        font-size: 1rem;
+    }
+    .feature_text{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    .food_category button{
+        padding: 5px 15px;
+        font-size: 0.7rem;
+    }
+    .food_category{
+        padding: 15px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
