@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'reactstrap';
 import logo from '../../assets/images/res-logo.png';
 import { NavLink, Link } from "react-router-dom";
-
+import { useSelector, useDispatch } from "react-redux"
 import '../../styles/header.css';
 import { useRef } from 'react';
+import { cartUiAction } from './../../store/shopping-cart/cartUiSlice';
 
 const nav_links = [
     {
@@ -27,10 +28,29 @@ const nav_links = [
 
 const Header = () => {
     const menuRef = useRef(null);
+    const headerRef = useRef(null);
+    const totalQuantity = useSelector(state => state.cart.totalQuantity);
+    const dispatch = useDispatch()
+
     const toggleMenu = () => menuRef.current.classList.toggle('show_menu');
 
+    const toggleCart = () => {
+        dispatch(cartUiAction.toggle())
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', ()=>{
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){
+                headerRef.current.classList.add('header_shrink')
+            } else {
+                headerRef.current.classList.remove('header_shrink')
+            }
+            return ()=> window.removeEventListener('scroll')
+        })      
+    }, [])    
+
     return (
-        <header className="header">
+        <header className="header" ref={headerRef}>
             <Container>
                 <div className="nav_wrapper d-flex align-items-center justify-content-between">
                     <div className="logo">
@@ -51,9 +71,9 @@ const Header = () => {
                     </div>
                     {/* ========== nav right icons ======== */}
                     <div className="nav_right d-flex align-item-center gap-4">
-                        <span className="cart_icon">
+                        <span className="cart_icon" onClick={toggleCart}>
                             <i class="ri-shopping-basket-line"></i>
-                            <span className="cart_badge">5</span>
+                            <span className="cart_badge">{totalQuantity}</span>
                         </span>
                         <span className="user">
                             <Link to="/login"><i class="ri-user-fill"></i></Link>

@@ -7,12 +7,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import { BrowserRouter as Router } from 'react-router-dom'; 
+import { Provider } from "react-redux";
+import store from './store/store';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <React.StrictMode>  
+      <Router>
+        <Provider store={store}>
+              <App />        
+        </Provider>      
+      </Router>
+  </React.StrictMode> 
+  ,
   document.getElementById("root")
 );

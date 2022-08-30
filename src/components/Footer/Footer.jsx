@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <Row className="mt-5">
+        <Row className="developer mt-5 ">
           <Col lg="6" md="6">
             <div className="copyright_text">
                 <p>Copyright &copy; - 2022 | All Right Reserved by Tasty Foods.</p>
